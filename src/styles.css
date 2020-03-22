@@ -1,16 +1,47 @@
-:root {
+
+* {
     box-sizing: border-box;
-
 }
 
-*,
-:before,
-:after {
-    box-sizing: inherit;
+html {
+    height: 100%;
 }
 
-body * + * {
-    height: 100vh;
-    margin: 1.5em 0 0;
+body {
     font-family: sans-serif;
+    margin: 0;
+    display: grid;
+    grid-gap: 0.1vw;
+    height: 100vh;
+    grid-template-columns: 7em 1fr;
+    grid-template-rows: 4em 3em 1fr 3em;
+    grid-template-areas: "header ." "section section " "sidebar content" "footer footer";
+
+}
+
+
+.main-header {
+    grid-area: header;
+    background: #ff5722;
+}
+
+.main-nav {
+    grid-area: section;
+    background: #cddc39;
+}
+
+.main-sidebar {
+    grid-area: sidebar;
+    background: #4caf50;
+
+}
+
+.main-content {
+    grid-area: content;
+    background: #e0e0e0;
+}
+
+.main-footer {
+    grid-area: footer;
+    background: #ffc107;
 }
