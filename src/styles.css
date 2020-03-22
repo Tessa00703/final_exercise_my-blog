@@ -13,35 +13,84 @@ body {
     display: grid;
     grid-gap: 0.1vw;
     height: 100vh;
-    grid-template-columns: 7em 1fr;
-    grid-template-rows: 4em 3em 1fr 3em;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1.2fr 1fr 9fr 1fr;
     grid-template-areas: "header ." "section section " "sidebar content" "footer footer";
-
+    align-content: center;
 }
 
 
-.main-header {
+.top-icon {
     grid-area: header;
-    background: #ff5722;
+    margin: 3px 5px;
+    place-self: center;
+    border: solid;
+    padding: 2px 10px;
 }
 
-.main-nav {
+.navigation {
     grid-area: section;
-    background: #cddc39;
+    background: #607d8b;
 }
 
-.main-sidebar {
+.navigation__items {
+    list-style: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation__item {
+    margin: 0 1rem;
+}
+
+.navigation__item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.2rem 0;
+}
+
+.sidebar {
     grid-area: sidebar;
-    background: #4caf50;
-
+    background: #607d8b;
 }
 
-.main-content {
+.sidebar-navigation {
+    list-style: none;
+    padding: 1rem 1rem;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sidebar-navigation__item {
+    margin: 5px;
+}
+
+
+.sidebar-navigation__item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.2rem 0;
+}
+
+
+
+.content {
     grid-area: content;
     background: #e0e0e0;
 }
 
 .main-footer {
     grid-area: footer;
-    background: #ffc107;
+    background: #263238;
 }
+
+
