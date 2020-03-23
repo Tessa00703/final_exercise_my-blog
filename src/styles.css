@@ -13,6 +13,8 @@ body {
     display: grid;
     grid-gap: 0.1vw;
     height: 100vh;
+    width: 100vw;
+    /*width: 100vw;*/
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 1.2fr 1fr 9fr 1fr;
     grid-template-areas: "header ." "section section " "sidebar content" "footer footer";
@@ -110,6 +112,22 @@ body {
 .footer__link a {
     color: white;
     text-decoration: none;
+}
+
+
+/*......................*/
+
+.blog {
+    /*overflow: scroll;*/
+    /*position: absolute;*/
+    font-size: 1.2rem;
+    /*overflow: auto;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr ;
+    /*padding: 20px;*/
+    grid-column-gap: 0.5vw;
+    overflow: hidden;
 }
 
 
