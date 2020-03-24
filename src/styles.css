@@ -116,20 +116,21 @@ body {
     text-decoration: none;
 }
 
-
-/*......................*/
-
 .blog {
-    /*overflow: scroll;*/
-    /*position: absolute;*/
     font-size: 1.2rem;
-    /*overflow: auto;*/
-    display:flex;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:1fr 1fr ;
-    /*padding: 20px;*/
+    display: flex;
     grid-column-gap: 0.5vw;
+    flex-direction: row;
     overflow: hidden;
+    align-content: space-between;
+    margin: 1.5em;
 }
 
-
+.blog img {
+    margin: 1em;
+    background-position: center;
+    height: 30vh;
+    width: 35vw;
+    object-fit: cover;
+    vertical-align: bottom;
+}
